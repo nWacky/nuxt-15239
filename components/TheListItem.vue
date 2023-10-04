@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-defineProps({
+const props = defineProps({
   item: {
     type: Object as PropType<FirstDataItem>,
     required: true,
@@ -12,6 +12,10 @@ onMounted(() => {
   // this is an onmounted callback.
   v = 1;
 });
+
+const onClickButton = () => {
+  console.log("item clicked: ", `${JSON.stringify(props.item)}`);
+};
 </script>
 
 <template>
@@ -20,6 +24,10 @@ onMounted(() => {
       <TheText :text="item.text" />
 
       <div>(mounted: {{ v === 1 }})</div>
+
+      <br />
+
+      <button @click="onClickButton">Button</button>
 
       <br />
 
