@@ -8,7 +8,7 @@ This is a demo repository for [nuxt/15239](https://github.com/nuxt/nuxt/issues/1
 
    ```
    # install and build
-   npm i
+   npm ci
    npx nuxi build
 
    # start a dev server
