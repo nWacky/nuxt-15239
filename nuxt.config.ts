@@ -11,6 +11,5 @@ export default defineNuxtConfig({
     server: true,
     client: true,
   },
-
   externalVue: true,
 });

@@ -23,3 +23,18 @@ export const useGetFirstData = async () => {
     items,
   };
 };
+
+export const useGetFirstDataSynchronous = () => {
+  const items = Array.from(Array(50).keys()).map((v) => {
+    const item: FirstDataItem = {
+      id: v,
+      text: `This is element #${v}`,
+    };
+
+    return item;
+  });
+
+  return {
+    items,
+  };
+};
