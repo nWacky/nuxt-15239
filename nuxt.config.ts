@@ -6,4 +6,11 @@ export default defineNuxtConfig({
     pageTransition: false,
     layoutTransition: false,
   },
+
+  sourcemap: {
+    server: true,
+    client: true,
+  },
+
+  externalVue: true,
 });
