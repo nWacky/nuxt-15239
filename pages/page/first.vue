@@ -3,15 +3,23 @@ const { data } = await useAsyncData(async () => await useGetFirstData());
 </script>
 
 <template>
-  <div class="page">
-    <h1>Page: first</h1>
+  <div>
+    <NuxtLayout name="left-column">
+      <template #left-column>
+        <div>This is a left column</div>
+      </template>
 
-    <br />
+      <div>
+        <h1>Page: first</h1>
 
-    <div v-if="(data?.items ?? []).length === 0">
-      <p>No data</p>
-    </div>
-    <TheList v-else :items="data?.items ?? []" />
+        <br />
+
+        <div v-if="(data?.items ?? []).length === 0">
+          <p>No data</p>
+        </div>
+        <TheList v-else :items="data?.items ?? []" />
+      </div>
+    </NuxtLayout>
   </div>
 </template>
 

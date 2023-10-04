@@ -1,19 +1,15 @@
 <script lang="ts" setup></script>
 
 <template>
-  <div class="page">
-    <h1>Page: index</h1>
+  <div>
+    <NuxtLayout name="full-width">
+      <h1>Page: index</h1>
 
-    <br />
+      <br />
 
-    <NuxtLink to="/page/first">Go to /page/first</NuxtLink>
+      <NuxtLink to="/page/first">Go to /page/first</NuxtLink>
+    </NuxtLayout>
   </div>
 </template>
 
-<style scoped>
-.page {
-  max-width: 600px;
-  margin: auto;
-  padding: 1rem;
-}
-</style>
+<style scoped></style>
