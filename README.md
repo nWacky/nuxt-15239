@@ -2,6 +2,17 @@
 
 This is a demo repository for [nuxt/15239](https://github.com/nuxt/nuxt/issues/15239)
 
+## How to reproduce
+
+```
+# install and build
+npm i
+npx nuxi build
+
+# start a dev server
+node .output/server/index.mjs
+```
+
 # Nuxt 3 Minimal Starter
 
 Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
