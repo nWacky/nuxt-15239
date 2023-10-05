@@ -12,7 +12,9 @@ const data = useGetFirstDataSynchronous();
       <div v-if="(data?.items ?? []).length === 0">
         <p>No data</p>
       </div>
-      <TheList v-else :items="data?.items ?? []" />
+      <div v-else>
+        <TheList :items="data?.items ?? []" />
+      </div>
     </div>
   </div>
 </template>
