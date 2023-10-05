@@ -17,10 +17,12 @@ src="./github-static/leaks-2fa3b3c7.png"
 title="A screenshot shown after clicking toggle a few times.
 About 1mb of ram allocated after each toggle.
 'DetachedHtmlButtonElement' in 'onclick' in 'context in n()'' in 't' is holding onto dom nodes
-"
-/>
+" />
 
-Tested in Chrome in incognito mode, without a devtools plugin
+Tested in Chrome in incognito mode, without a devtools plugin.
+
+Removing [`@click="onClickButton"` from TheListItem](https://github.com/nWacky/nuxt-15239/blob/a63475ff8cd0a3829a3f6e2aae8041662e00e1e5/src/components/TheListItem.vue#L29)
+reduces leaked memory from 988Kb to 160Kb per mount/unmount cycle
 
 # memory-leak-demo
 
