@@ -9,12 +9,7 @@ const { data } = useAsyncData(async () => await useGetFirstData());
 
       <br />
 
-      <div v-if="(data?.items ?? []).length === 0">
-        <p>No data</p>
-      </div>
-      <div v-else>
-        <TheList :items="data?.items ?? []" />
-      </div>
+      <TheList :items="data?.items ?? []" />
     </div>
   </div>
 </template>
