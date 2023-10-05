@@ -27,7 +27,7 @@ const onClickButton = () => {
 
       <br />
 
-      <!-- <button @click="onClickButton">Button</button> -->
+      <button @click="onClickButton">Button</button>
 
       <br />
 
