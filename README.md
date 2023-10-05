@@ -2,6 +2,8 @@
 
 This is a demo repository for [nuxt/15239](https://github.com/nuxt/nuxt/issues/15239)
 
+The issue is probably in vue. See [vue only reproduction](https://github.com/nWacky/nuxt-15239/tree/vue-only-reproduction)
+
 ## How to reproduce
 
 1. Start a production server
