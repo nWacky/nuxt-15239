@@ -1,7 +1,5 @@
 <script setup lang="ts">
 const showItems = ref(false);
-
-const data = useGetFirstDataSynchronous();
 </script>
 
 <template>
@@ -19,7 +17,7 @@ const data = useGetFirstDataSynchronous();
       <br />
 
       <div v-if="showItems">
-        <TheList :items="data?.items ?? []" />
+        <TheList />
       </div>
     </div>
   </div>
