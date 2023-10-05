@@ -4,22 +4,16 @@ const data = useGetFirstDataSynchronous();
 
 <template>
   <div>
-    <NuxtLayout name="left-column">
-      <template #left-column>
-        <div>This is a left column for the second page</div>
-      </template>
+    <div>
+      <h1>Page: second</h1>
 
-      <div>
-        <h1>Page: second</h1>
+      <br />
 
-        <br />
-
-        <div v-if="(data?.items ?? []).length === 0">
-          <p>No data</p>
-        </div>
-        <TheList v-else :items="data?.items ?? []" />
+      <div v-if="(data?.items ?? []).length === 0">
+        <p>No data</p>
       </div>
-    </NuxtLayout>
+      <TheList v-else :items="data?.items ?? []" />
+    </div>
   </div>
 </template>
 

@@ -1,25 +1,19 @@
 <script lang="ts" setup>
-const { data } = await useAsyncData(async () => await useGetFirstData());
+const { data } = useAsyncData(async () => await useGetFirstData());
 </script>
 
 <template>
   <div>
-    <NuxtLayout name="left-column">
-      <template #left-column>
-        <div>This is a left column</div>
-      </template>
+    <div>
+      <h1>Page: first</h1>
 
-      <div>
-        <h1>Page: first</h1>
+      <br />
 
-        <br />
-
-        <div v-if="(data?.items ?? []).length === 0">
-          <p>No data</p>
-        </div>
-        <TheList v-else :items="data?.items ?? []" />
+      <div v-if="(data?.items ?? []).length === 0">
+        <p>No data</p>
       </div>
-    </NuxtLayout>
+      <TheList v-else :items="data?.items ?? []" />
+    </div>
   </div>
 </template>
 

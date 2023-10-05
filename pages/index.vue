@@ -2,16 +2,14 @@
 
 <template>
   <div>
-    <NuxtLayout name="full-width">
-      <h1>Page: index</h1>
+    <h1>Page: index</h1>
 
-      <br />
+    <br />
 
-      <div class="links">
-        <NuxtLink to="/page/first">Go to /page/first</NuxtLink>
-        <NuxtLink to="/page/second">Go to /page/second</NuxtLink>
-      </div>
-    </NuxtLayout>
+    <div class="links">
+      <NuxtLink to="/page/first">Go to /page/first</NuxtLink>
+      <NuxtLink to="/page/second">Go to /page/second</NuxtLink>
+    </div>
   </div>
 </template>
 
