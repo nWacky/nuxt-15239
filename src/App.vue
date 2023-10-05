@@ -7,18 +7,16 @@ const showItems = ref(false);
 
 <template>
   <div>
-    <div>
-      <h1>app.vue</h1>
+    <h1>app.vue</h1>
 
-      <br />
-      <button @click="showItems = !showItems">
-        Toggle show to {{ !showItems }}
-      </button>
-      <br />
+    <br />
+    <button @click="showItems = !showItems">
+      Toggle show to {{ !showItems }}
+    </button>
+    <br />
 
-      <div v-if="showItems">
-        <TheList />
-      </div>
+    <div v-if="showItems">
+      <TheList />
     </div>
   </div>
 </template>

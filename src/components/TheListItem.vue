@@ -1,12 +1,12 @@
 <script lang="ts" setup>
 import { ref, onMounted } from "vue";
+
 import TheText from "./TheText.vue";
 import TheListOne from "./TheListOne.vue";
 import TheListTwo from "./TheListTwo.vue";
 import TheListThree from "./TheListThree.vue";
 
 let v = ref(0);
-
 onMounted(() => {
   // this is an onmounted callback.
   v.value = 1;
@@ -37,8 +37,6 @@ const onClickButton = () => {
       </details>
 
       <br />
-
-      <!-- <NuxtLink to="/">Back to index</NuxtLink> -->
     </div>
   </div>
 </template>
