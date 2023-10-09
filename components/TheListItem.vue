@@ -30,11 +30,6 @@ const onClickButton = () => {
       <button @click="onClickButton">Button</button>
 
       <br />
-      <details>
-        <TheListOne />
-        <TheListTwo />
-        <TheListThree />
-      </details>
 
       <br />
 

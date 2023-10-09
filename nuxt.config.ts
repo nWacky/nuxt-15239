@@ -11,5 +11,11 @@ export default defineNuxtConfig({
     server: true,
     client: true,
   },
+
   externalVue: true,
+  vue: {
+    compilerOptions: {
+      hoistStatic: false,
+    },
+  },
 });
